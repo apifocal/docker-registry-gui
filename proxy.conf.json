@@ -1,0 +1,16 @@
+{
+  "/api/catalog": {
+    "target": "https://docker-tmp.apifocal.org/v2/_catalog",
+    "changeOrigin": true,
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {"^/api/catalog" : ""}
+  },
+  "/api/silkmq-backend/tags": {
+    "target": "https://docker-tmp.apifocal.org/v2/silkmq-backend/tags/list",
+    "changeOrigin": true,
+    "secure": false,
+    "logLevel": "debug",
+    "pathRewrite": {"^/api/silkmq-backend/tags" : ""}
+  }
+}
