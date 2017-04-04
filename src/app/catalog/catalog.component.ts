@@ -8,7 +8,7 @@ import { DockerService } from '../docker.service';
 })
 
 export class CatalogComponent implements OnInit {
-	private items: any[];
+	public items: any[];
 
 	constructor(private dockerService: DockerService){
 	}

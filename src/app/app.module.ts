@@ -10,6 +10,7 @@ import { DockerService } from './docker.service';
 import { AppComponent } from './app.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { TagComponent } from './tag/tag.component';
+import { AlphabeticalPipe } from './alphabetical.pipe';
 
 const appRoutes: Routes = [
   {
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     CatalogComponent,
-    TagComponent
+    TagComponent,
+    AlphabeticalPipe
   ],
   imports: [
     BrowserModule,
