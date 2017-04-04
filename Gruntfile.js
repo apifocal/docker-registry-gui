@@ -5,7 +5,8 @@ module.exports = function(grunt) {
     compress: {
       main: {
         options: {
-          archive: 'archive.<%= pkg.version %>.zip'
+          mode: "tgz",
+          archive: '<%= pkg.name %>.<%= pkg.version %>.tgz'
         },
         files: [
           {
