@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "compress": "grunt compress"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +34,8 @@
     "@types/node": "~6.0.60",
     "codelyzer": "~2.0.0",
     "font-awesome": "^4.7.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-compress": "^1.4.1",
     "jasmine-core": "~2.5.2",
     "jasmine-spec-reporter": "~3.2.0",
     "karma": "~1.4.1",
