@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class DockerViewerPage {
+export class DockerRegistryGUIPage {
   navigateTo() {
     return browser.get('/');
   }

@@ -1,10 +1,10 @@
-import { DockerViewerPage } from './app.po';
+import { DockerRegistryGUIPage } from './app.po';
 
 describe('docker-viewer App', () => {
-  let page: DockerViewerPage;
+  let page: DockerRegistryGUIPage;
 
   beforeEach(() => {
-    page = new DockerViewerPage();
+    page = new DockerRegistryGUIPage();
   });
 
   it('should display message saying app works', () => {
