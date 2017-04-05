@@ -1,5 +1,5 @@
 <div class="list-group">
-	<a [routerLink]="['/catalog/' + item + '/tags']" class="list-group-item list-group-item-action" *ngFor="let item of items">
+	<a [routerLink]="['/catalog/tags/' + item]" class="list-group-item list-group-item-action" *ngFor="let item of items">
   		<i class="fa fa-git" aria-hidden="true"></i>
   		{{item}}
 	</a>

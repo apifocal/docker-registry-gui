@@ -1,58 +1,16 @@
 {
   "/api/catalog": {
-    "target": "https://docker-tmp.apifocal.org/v2/_catalog",
+    "target": "https://docker.apifocal.org/v2/_catalog",
     "changeOrigin": true,
     "secure": false,
     "logLevel": "debug",
     "pathRewrite": {"^/api/catalog" : ""}
   },
-  "/api/grafana-silkmq/tags": {
-    "target": "https://docker-tmp.apifocal.org/v2/grafana-silkmq/tags/list",
+  "/api/(.*)/tags": {
+    "target": "https://docker.apifocal.org/v2/$1/tags/list",
     "changeOrigin": true,
     "secure": false,
     "logLevel": "debug",
-    "pathRewrite": {"^/api/grafana-silkmq/tags" : ""}
-  },
-  "/api/silkmq-backend/tags": {
-    "target": "https://docker-tmp.apifocal.org/v2/silkmq-backend/tags/list",
-    "changeOrigin": true,
-    "secure": false,
-    "logLevel": "debug",
-    "pathRewrite": {"^/api/silkmq-backend/tags" : ""}
-  },
-  "/api/grafana-src/tags": {
-    "target": "https://docker-tmp.apifocal.org/v2/grafana-src/tags/list",
-    "changeOrigin": true,
-    "secure": false,
-    "logLevel": "debug",
-    "pathRewrite": {"^/api/grafana-src/tags" : ""}
-  },
-  "/api/silkmq-backend/tags": {
-    "target": "https://docker-tmp.apifocal.org/v2/silkmq-backend/tags/list",
-    "changeOrigin": true,
-    "secure": false,
-    "logLevel": "debug",
-    "pathRewrite": {"^/api/silkmq-backend/tags" : ""}
-  },
-  "/api/silkmq-broker-staged-bridge/tags": {
-    "target": "https://docker-tmp.apifocal.org/v2/silkmq-broker-staged-bridge/tags/list",
-    "changeOrigin": true,
-    "secure": false,
-    "logLevel": "debug",
-    "pathRewrite": {"^/api/silkmq-broker-staged-bridge/tags" : ""}
-  },
-  "/api/silkmq-broker-staged-gateway/tags": {
-    "target": "https://docker-tmp.apifocal.org/v2/silkmq-broker-staged-gateway/tags/list",
-    "changeOrigin": true,
-    "secure": false,
-    "logLevel": "debug",
-    "pathRewrite": {"^/api/silkmq-broker-staged-gateway/tags" : ""}
-  },
-  "/api/silkmq-backend/tags": {
-    "target": "https://docker-tmp.apifocal.org/v2/silkmq-backend/tags/list",
-    "changeOrigin": true,
-    "secure": false,
-    "logLevel": "debug",
-    "pathRewrite": {"^/api/silkmq-backend/tags" : ""}
+    "pathRewrite": {"^/api/$1/tags" : ""}
   }
 }

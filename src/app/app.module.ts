@@ -23,7 +23,7 @@ const appRoutes: Routes = [
     component: CatalogComponent
   },
   {
-    path: 'catalog/:id/tags',
+    path: 'catalog/tags/:id',
     component: TagComponent
   }
 ];

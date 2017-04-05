@@ -22,7 +22,7 @@ export class TagComponent implements OnInit {
 	}
 
 	ngOnInit() {
-		this.getItems('/api/' + this.route.snapshot.params['id'] + '/tags');
+		this.getItems('/api/tags/' + this.route.snapshot.params['id'] + '');
 	}
 
 	getItems(url){
