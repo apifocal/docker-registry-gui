@@ -1,7 +1,7 @@
 <h1 class="mb-4">{{name}}</h1>
 
 <div class="list-group">
-	<a [routerLink]="['/']" class="list-group-item list-group-item-action" *ngFor="let item of items; let i = index">
+	<a [routerLink]="['/']" class="list-group-item list-group-item-action" *ngFor="let item of items | sort">
 		<i class="fa fa-tags" aria-hidden="true"></i>
   		{{item}}
 	</a>

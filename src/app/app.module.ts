@@ -10,7 +10,7 @@ import { DockerService } from './docker.service';
 import { AppComponent } from './app.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { TagComponent } from './tag/tag.component';
-import { AlphabeticalPipe } from './alphabetical.pipe';
+import { SortPipe } from './sort.pipe';
 
 const appRoutes: Routes = [
   {
@@ -33,7 +33,7 @@ const appRoutes: Routes = [
     AppComponent,
     CatalogComponent,
     TagComponent,
-    AlphabeticalPipe
+    SortPipe
   ],
   imports: [
     BrowserModule,
