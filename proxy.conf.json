@@ -1,13 +1,13 @@
 {
   "/api/catalog": {
-    "target": "https://docker.apifocal.org/v2/_catalog",
+    "target": "https://docker.apifocal.org:5000/v2/_catalog",
     "changeOrigin": true,
     "secure": false,
     "logLevel": "debug",
     "pathRewrite": {"^/api/catalog" : ""}
   },
   "/api/(.*)/tags": {
-    "target": "https://docker.apifocal.org/v2/$1/tags/list",
+    "target": "https://docker.apifocal.org:5000/v2/$1/tags/list",
     "changeOrigin": true,
     "secure": false,
     "logLevel": "debug",

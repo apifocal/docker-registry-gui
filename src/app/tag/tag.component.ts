@@ -11,8 +11,8 @@ import 'rxjs/add/operator/switchMap';
   styleUrls: ['./tag.component.css']
 })
 export class TagComponent implements OnInit {
-	public name: string;
-	public items: any[];
+	public name: string = '';
+	public items: any[] = [];
 
 	constructor(
 		private route: ActivatedRoute,
